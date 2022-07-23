@@ -7,3 +7,8 @@ version: 1.0.0
 # This is the version number of the application being deployed.
 # Source: https://hub.docker.com/r/bedrockio/export-html/tags
 appVersion: "1.0.1"
+
+maintainers:
+  - name: jonahbohlmann
+    email: j.bohlmann@sergo.de
+    url: https://sergo.de/

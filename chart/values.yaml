@@ -29,7 +29,7 @@ podSecurityContext:
 securityContext:
   capabilities:
     drop:
-     - ALL
+    - ALL
   runAsNonRoot: true
   runAsUser: 1000
 
@@ -40,7 +40,7 @@ service:
 ingress:
   enabled: false
   annotations:
-    kubernetes.io/ingress.class: 
+    kubernetes.io/ingress.class: ""
     # kubernetes.io/tls-acme: "true"
   hosts:
     - host: html-export.localhost
