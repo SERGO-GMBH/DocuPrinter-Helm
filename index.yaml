@@ -1,0 +1,19 @@
+apiVersion: v1
+entries:
+  html-export:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2022-07-23T13:31:02.948876112Z"
+    description: helm chart to install the export-html container from bedrockio in
+      kubernetes.
+    digest: 92d628c17698000e3c1400af3531505e0da950db34bcf573f06fadd1c5a72216
+    maintainers:
+    - email: j.bohlmann@sergo.de
+      name: jonahbohlmann
+      url: https://sergo.de/
+    name: html-export
+    type: application
+    urls:
+    - https://github.com/SERGO-GMBH/export-html-helm/releases/download/html-export-1.0.0/html-export-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-07-23T13:31:02.949119718Z"
