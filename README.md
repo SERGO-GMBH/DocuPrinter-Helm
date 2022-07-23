@@ -4,7 +4,12 @@ This repository contains a helm chart to install the [export-html container from
 ## Quickstart
 
 ### General
-> TODO: Insert after helm-chart name is provided
+
+```bash
+helm repo add sergo-export-html https://sergo-gmbh.github.io/export-html-helm/
+
+helm upgrade --install html-export sergo-export-html/html-export
+```
 
 ### Quickstart local with minikube
 
