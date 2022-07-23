@@ -8,7 +8,7 @@ version: 1.0.1
 # Source: https://hub.docker.com/r/bedrockio/export-html/tags
 appVersion: "1.0.1"
 
-kubeVersion: '>= 1.22.0-0 < 1.25.0'
+kubeVersion: '>= 1.21.0-0 < 1.25.0'
 
 home: https://sergo-gmbh.github.io/export-html-helm/
 
