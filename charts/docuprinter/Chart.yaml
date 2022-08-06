@@ -5,7 +5,7 @@ type: application
 version: 1.0.3
 
 # This is the version number of the application being deployed.
-# Source: https://hub.docker.com/r/bedrockio/export-html/tags
+# Source: https://hub.docker.com/r/sergogmbh/docuprinter/tags
 appVersion: "v1.0.0"
 
 kubeVersion: '>= 1.21.0-0 < 1.25.0'
