@@ -1,14 +1,14 @@
-# export-html-helm
-This repository contains a helm chart to install the [export-html container from bedrockio](https://github.com/bedrockio/export-html) in kubernetes.
+# docuprinter-helm
+This repository contains a helm chart to install the [DocuPrinter container from sergogmbh](https://sergo-gmbh.github.io/DocuPrinter/) in kubernetes.
 
 ## Quickstart
 
 ### General
 
 ```bash
-helm repo add sergo-export-html https://sergo-gmbh.github.io/export-html-helm/
+helm repo add sergo-docuprinter https://sergo-gmbh.github.io/DocuPrinter-Helm/
 
-helm upgrade --install html-export sergo-export-html/html-export
+helm upgrade --install docuprinter sergo-docuprinter/docuprinter
 ```
 
 ### Quickstart local with minikube
@@ -22,7 +22,7 @@ minikube addons enable metrics-server
 minikube addons enable storage-provisioner
 minikube addons enable ingress
 
-helm upgrade --install html-export chart/ 
+helm upgrade --install docuprinter ./charts/docuprinter/
 ```
 
 ## Configuration
