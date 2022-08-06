@@ -1,5 +1,26 @@
 apiVersion: v1
 entries:
+  docuprinter:
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: "2022-08-06T10:39:38.775452623Z"
+    description: helm chart to install the docuprinter container from sergogmbh in
+      kubernetes.
+    digest: 74ea50761bfdbc171df4b82f406714fdfadc30507a879d65d994ecddf09446c5
+    home: https://github.com/SERGO-GMBH/DocuPrinter
+    icon: https://github.com/SERGO-GMBH/DocuPrinter-Helm/images/icon.svg
+    kubeVersion: '>= 1.21.0-0 < 1.25.0'
+    maintainers:
+    - email: j.bohlmann@sergo.de
+      name: jonahbohlmann
+      url: https://sergo.de/
+    name: docuprinter
+    sources:
+    - https://github.com/SERGO-GMBH/DocuPrinter
+    type: application
+    urls:
+    - https://github.com/SERGO-GMBH/DocuPrinter-Helm/releases/download/docuprinter-1.0.3/docuprinter-1.0.3.tgz
+    version: 1.0.3
   html-export:
   - apiVersion: v2
     appVersion: 1.0.1
@@ -36,4 +57,4 @@ entries:
     urls:
     - https://github.com/SERGO-GMBH/export-html-helm/releases/download/html-export-1.0.0/html-export-1.0.0.tgz
     version: 1.0.0
-generated: "2022-07-23T14:27:48.461762931Z"
+generated: "2022-08-06T10:39:38.775470423Z"
