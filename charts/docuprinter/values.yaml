@@ -1,11 +1,11 @@
-# Default values for html-export.
+# Default values for docuprinter.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
 replicaCount: 1
 
 image:
-  repository: bedrockio/export-html
+  repository: sergogmbh/docuprinter
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -43,7 +43,7 @@ ingress:
     kubernetes.io/ingress.class: ""
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: html-export.localhost
+    - host: docuprinter.localhost
       paths:
         - path: /
           pathType: ImplementationSpecific
@@ -83,5 +83,5 @@ affinity:
               - key: name
                 operator: In
                 values:
-                  - export-html
+                  - docuprinter
           topologyKey: kubernetes.io/hostname

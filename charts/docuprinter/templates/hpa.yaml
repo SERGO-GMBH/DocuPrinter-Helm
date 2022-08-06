@@ -2,14 +2,14 @@
 apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "html-export.fullname" . }}
+  name: {{ include "docuprinter.fullname" . }}
   labels:
-    {{- include "html-export.labels" . | nindent 4 }}
+    {{- include "docuprinter.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "html-export.fullname" . }}
+    name: {{ include "docuprinter.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
   maxReplicas: {{ .Values.autoscaling.maxReplicas }}
   metrics:
