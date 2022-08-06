@@ -1,4 +1,4 @@
-# export-html-helm
+# docuprinter-helm
 This repository contains a helm chart to install the [DocuPrinter container from sergogmbh](https://sergo-gmbh.github.io/DocuPrinter/) in kubernetes.
 
 ## Quickstart
