@@ -1,0 +1,23 @@
+apiVersion: v2
+name: docuprinter
+description: helm chart to install the docuprinter container from sergogmbh in kubernetes.
+type: application
+version: 1.0.3
+
+# This is the version number of the application being deployed.
+# Source: https://hub.docker.com/r/bedrockio/export-html/tags
+appVersion: "v1.0.0"
+
+kubeVersion: '>= 1.21.0-0 < 1.25.0'
+
+home: https://github.com/SERGO-GMBH/DocuPrinter
+
+maintainers:
+  - name: jonahbohlmann
+    email: j.bohlmann@sergo.de
+    url: https://sergo.de/
+
+sources:
+  - https://github.com/SERGO-GMBH/DocuPrinter
+
+icon: https://github.com/SERGO-GMBH/DocuPrinter-Helm/images/icon.svg

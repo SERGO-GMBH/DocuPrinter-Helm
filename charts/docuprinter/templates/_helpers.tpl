@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "html-export.name" -}}
+{{- define "docuprinter.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "html-export.fullname" -}}
+{{- define "docuprinter.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,16 +26,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "html-export.chart" -}}
+{{- define "docuprinter.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "html-export.labels" -}}
-helm.sh/chart: {{ include "html-export.chart" . }}
-{{ include "html-export.selectorLabels" . }}
+{{- define "docuprinter.labels" -}}
+helm.sh/chart: {{ include "docuprinter.chart" . }}
+{{ include "docuprinter.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -45,17 +45,17 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "html-export.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "html-export.name" . }}
+{{- define "docuprinter.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "docuprinter.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "html-export.serviceAccountName" -}}
+{{- define "docuprinter.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "html-export.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "docuprinter.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
