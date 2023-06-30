@@ -6,9 +6,9 @@ version: 1.0.4
 
 # This is the version number of the application being deployed.
 # Source: https://hub.docker.com/r/sergogmbh/docuprinter/tags
-appVersion: "v1.1.0"
+appVersion: "v1.2.0"
 
-kubeVersion: '>= 1.21.0-0 < 1.25.0'
+kubeVersion: '>= 1.21.0-0 <= 1.26.0'
 
 home: https://github.com/SERGO-GMBH/DocuPrinter
 
