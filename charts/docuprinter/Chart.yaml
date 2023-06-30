@@ -2,7 +2,7 @@ apiVersion: v2
 name: docuprinter
 description: helm chart to install the docuprinter container from sergogmbh in kubernetes.
 type: application
-version: 1.0.4
+version: 1.0.5
 
 # This is the version number of the application being deployed.
 # Source: https://hub.docker.com/r/sergogmbh/docuprinter/tags
